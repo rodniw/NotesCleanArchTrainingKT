@@ -1,18 +1,17 @@
 /**
  *Source largely taken from this OS repo: https://github.com/googlesamples/android-architecture-components/blob/master/GithubBrowserSample/versions.gradle
- * Thank you to everyone involved in this awesome OS project!
  *
- * In this file, we basically build a tree of deps in a very DRY way.
+ * In this file, i basically build a tree of deps in a very DRY way.
  **/
 
-//ext is a way to add extra data key/value pairs to a gradle domain object. Since it has no prefix,
+//ext is a way to add extra data key/value pairs to a gradle domain object. since it has no prefix,
 //it is short hand for project.ext in this case.
 //[:] is groovy syntax for creating a "Map" Object, which is a collection of key/value pairs
 
 //create a map of key/value pairs, called deps (deps)
 ext.deps = [:]
 
-//def means we're making a local variable. We'll use this map to build our deps key/value
+//def means we're making a local variable. I'll use this map to build our deps key/value
 //pairs below
 def versions = [:]
 versions.lifecycle = "2.0.0-rc01"
@@ -33,8 +32,8 @@ versions.firebase_firestore = "17.1.4"
 versions.play_services_auth = "16.0.1"
 versions.constraint_layout = "2.0.0-alpha2"
 versions.coroutine_version = "1.0.1"
-versions.android_gradle_plugin = "3.2.1"
-versions.kotlin = "1.3.0-rc-190"
+versions.android_gradle_plugin = '3.5.0'
+versions.kotlin = "1.3.31"
 
 def deps = [:]
 
@@ -80,10 +79,9 @@ kotlin.coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version
 kotlin.coroutines_android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutine_version"
 deps.kotlin = kotlin
 
-
 def build_versions = [:]
 build_versions.min_sdk = 21
-build_versions.target_sdk = 28
+build_versions.target_sdk = 29
 ext.build_versions = build_versions
 
 deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
