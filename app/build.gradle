@@ -40,9 +40,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation project(":domain")
+    implementation project(":data")
 
     //Dependencies
     implementation deps.android.constraint_layout
