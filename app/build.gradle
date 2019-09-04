@@ -10,7 +10,7 @@ android {
     compileSdkVersion build_versions.target_sdk
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "dev.rodni.ru.lndntheatrecleantrainingkt"
+        applicationId "dev.rodni.ru.notescleanarchtrainingkt"
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
         versionCode 1

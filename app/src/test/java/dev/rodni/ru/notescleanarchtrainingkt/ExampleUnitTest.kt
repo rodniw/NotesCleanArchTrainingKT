@@ -1,4 +1,4 @@
-package dev.rodni.ru.lndntheatrecleantrainingkt
+package dev.rodni.ru.notescleanarchtrainingkt
 
 import org.junit.Test
 
